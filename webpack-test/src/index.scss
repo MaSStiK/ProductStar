@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-Regular.woff") format("woff"),
+         url("fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+* {
+    font-family: "Open Sans";
+}
+
+body {
+    background-color: blueviolet;
+}
+
+div {
+    background-color: green;
+    & p {
+        color: red;
+    }
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-image: url("./img/image2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
