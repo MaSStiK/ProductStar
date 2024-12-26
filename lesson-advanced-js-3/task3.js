@@ -15,7 +15,7 @@ const getAllSubUniqArr = (arr) => {
             count++
         }   
     }
-    return count;
+    return count
 }
 
 console.log("task3")
