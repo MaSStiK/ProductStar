@@ -29,10 +29,11 @@
     /* Решение
     start - Стек
     end - Стек
-    timer1 - Макро
-    error (15 строка) - Макро
-    undefined (20 строка) - Макро
-    text form then (23 строка) - Макро
+    timer1 - Микро
+    error (15 строка) - Микро
+    undefined (17 строка) - Микро
+    undefined (20 строка) - Микро
+    text form then (23 строка) - Микро
     timer2 - Макро
     */
 }
