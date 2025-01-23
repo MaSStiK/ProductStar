@@ -11,7 +11,7 @@ console.log(sayHello.prototype === sayGoodbye.prototype); // false
 
 let age = 18;
 console.log(age.prototype === Number.prototype); // false
-console.log(age.__proto__ === Number.prototype); // false
+console.log(age.__proto__ === Number.prototype); // true
 
 class MyClass {};
 console.log(MyClass.__proto__ === Function.prototype); // true
