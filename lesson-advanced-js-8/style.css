@@ -52,7 +52,6 @@
   display: flex;
   width: 100%;
   gap: 50px;
-  flex-wrap: wrap;
 }
 
 .card, .card-extra {
@@ -71,12 +70,14 @@
 }
 
 .cards-wrapper {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .extra-cards-wrapper {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;

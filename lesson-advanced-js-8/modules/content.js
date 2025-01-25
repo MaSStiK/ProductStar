@@ -8,8 +8,16 @@ const cardData = [
   'Card 5',
 ];
 
+const extraCardData = [
+  'Same card 1',
+  'Same card 2',
+  'Same card 3',
+  'Same card 4',
+  'Same card 5',
+];
+
 const cards = cardData.map(el => new Element('div', 'card', el).get())
-const extraCards = cardData.map(el => new Element('div', 'card-extra', "Same " + el).get())
+const extraCards = extraCardData.map(el => new Element('div', 'card-extra', el).get())
 
 const cardsWrapper = new Element('div', 'cards-wrapper', cards).get()
 const extraCardsWrapper = new Element('div', 'extra-cards-wrapper', extraCards).get()
