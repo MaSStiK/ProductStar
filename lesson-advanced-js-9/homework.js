@@ -1,5 +1,3 @@
-const url = "https://jsonplaceholder.typicode.com"
-
 // 1) /todos - Сколько всего задач у каждого пользователя?
 // У каждого пользователя по 20 задач
 
