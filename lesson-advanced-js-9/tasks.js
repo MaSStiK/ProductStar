@@ -84,7 +84,7 @@ fetch(`${url}/albums/5/photos`).then(res => res.json())
 // 8) /todos - какого цвета изображение с id = 224?
 fetch(`${url}/photos/224`).then(res => res.json())
     .then(data => {
-        console.log("task8", data);
+        console.log("task8", data.url);
     })
 // Нету возможность посмотреть изображение, есть только ссылка https://via.placeholder.com/600/b273e9
 
@@ -92,9 +92,9 @@ fetch(`${url}/photos/224`).then(res => res.json())
 // 9) /todos - какой id имеет последняя фотография в альбоме с id = 32?
 fetch(`${url}/albums/32/photos`).then(res => res.json())
     .then(data => {
-        console.log("task9", data);
+        console.log("task9", data.at(-1).id);
     })
-// Опять же нету возможности посмотреть фото, есть только ссылка https://via.placeholder.com/600/708743
+// У последней фотографии id 1600
 
 
 // 10) /todos - Какой id у альбома с названием "repellendus praesentium debitis officiis"?
