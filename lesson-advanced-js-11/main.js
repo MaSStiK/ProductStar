@@ -3,8 +3,6 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const data = new FormData(form);
-    console.log(data);
-
     let formValidated = validateForm(data)
 
     if (!formValidated) return
@@ -16,7 +14,7 @@ form.addEventListener("submit", (event) => {
         body: data,
     })
     .then(res => res.json())
-    .then(console.log(res))
+    .then(data => console.log(data))
     .catch(() => {
         form.reset();
     });
