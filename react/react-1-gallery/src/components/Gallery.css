@@ -1,0 +1,27 @@
+.Gallery {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gallery__list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.Gallery__photo {
+    height: 400px;
+}
+
+.Gallery__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.Gallery__buttons button {
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,9 @@
+.Dice__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dice__container img {
+    height: 150px;
+}
