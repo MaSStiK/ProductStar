@@ -46,12 +46,12 @@ const libraryBook = new LibraryBook("Преступление и наказан�
 libraryBook.checkout()
 console.log(libraryBook.getTitle());
 
-
 const digitalBook = new DigitalBook("Приключения капитана Врунгеля", "Андрей Сергеевич Некрасов", 1937)
 digitalBook.checkout()
 console.log(digitalBook.getTitle());
 
 interface ILibrary {
+    books: IBook[];
     addBook(book: Book): void;
     checkoutBook(title: string): void;
 }
