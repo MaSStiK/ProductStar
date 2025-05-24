@@ -51,16 +51,19 @@ digitalBook.checkout()
 console.log(digitalBook.getTitle());
 
 interface ILibrary {
-    books: IBook[];
-    addBook(book: Book): void;
+    addBook(book: IBook): void;
     checkoutBook(title: string): void;
 }
 
 class Library implements ILibrary {
-    books: IBook[] = [];
+    private books: IBook[] = []; // делаем приватным
 
-    addBook(book: Book) {
-        this.books.push(book)
+    addBook(book: IBook) {
+        if (this.books.some(item => item.getTitle() === book.getTitle())) {
+            console.log("Эта книга уже есть в библиотеке");
+            return;
+        }
+        this.books.push(book);
     }
 
     checkoutBook(title: string) {
@@ -77,6 +80,7 @@ class Library implements ILibrary {
 const libraryInstant = new Library()
 libraryInstant.addBook(libraryBook)
 libraryInstant.addBook(digitalBook)
+libraryInstant.addBook(digitalBook) // Вывод ошибки
 libraryInstant.checkoutBook("Преступление и наказание")
 libraryInstant.checkoutBook("Приключения капитана Врунгеля")
-libraryInstant.checkoutBook("Война и мир")
+libraryInstant.checkoutBook("Война и мир") // Вывод ошибки

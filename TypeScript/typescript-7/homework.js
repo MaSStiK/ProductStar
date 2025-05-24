@@ -36,9 +36,13 @@ digitalBook.checkout();
 console.log(digitalBook.getTitle());
 class Library {
     constructor() {
-        this.books = [];
+        this.books = []; // делаем приватным
     }
     addBook(book) {
+        if (this.books.some(item => item.getTitle() === book.getTitle())) {
+            console.log("Эта книга уже есть в библиотеке");
+            return;
+        }
         this.books.push(book);
     }
     checkoutBook(title) {
@@ -54,6 +58,7 @@ class Library {
 const libraryInstant = new Library();
 libraryInstant.addBook(libraryBook);
 libraryInstant.addBook(digitalBook);
+libraryInstant.addBook(digitalBook); // Вывод ошибки
 libraryInstant.checkoutBook("Преступление и наказание");
 libraryInstant.checkoutBook("Приключения капитана Врунгеля");
-libraryInstant.checkoutBook("Война и мир");
+libraryInstant.checkoutBook("Война и мир"); // Вывод ошибки
