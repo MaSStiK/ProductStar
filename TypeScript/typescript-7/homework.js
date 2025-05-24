@@ -36,7 +36,7 @@ digitalBook.checkout();
 console.log(digitalBook.getTitle());
 class Library {
     constructor() {
-        this.books = []; // делаем приватным
+        this.books = []; // Делаем переменную приватной
     }
     addBook(book) {
         if (this.books.some(item => item.getTitle() === book.getTitle())) {

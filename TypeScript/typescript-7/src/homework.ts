@@ -56,7 +56,7 @@ interface ILibrary {
 }
 
 class Library implements ILibrary {
-    private books: IBook[] = []; // делаем приватным
+    private books: IBook[] = []; // Делаем переменную приватной
 
     addBook(book: IBook) {
         if (this.books.some(item => item.getTitle() === book.getTitle())) {
