@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/genres-container.css">
+    <link rel="stylesheet" href="./styles/books-container.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <template id="genre-template">
+        <div class="genre-block">
+            <button>Классика</button>
+        </div>
+    </template>
+
+    <template id="book-template">
+        <div class="book-block">
+            <div class="book-info">
+                <h2>Название книги</h>
+                <h3>Автор</h3>
+                <h4>Год выпуска</h4>
+            </div>
+            <div class="book-buttons">
+                <button class="edit-book">
+                    <img src="./assets/Edit.svg" alt="edit">
+                </button>
+                <button class="delete-book">
+                    <img src="./assets/Delete.svg" alt="delete">
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <main>
+        <article>
+            <section>
+                <form id="form-add-book" class="form">
+                    <h1>Добавить книгу</h1>
+                    <input type="text" id="form-add-title" placeholder="Название книги" required>
+                    <input type="text" id="form-add-author" placeholder="Автор книги" required>
+                    <input type="number" id="form-add-year" placeholder="Год выпуска книги" required>
+                    <div>
+                        <label for="genre">Выберите жанр:</label>
+                        <select id="form-add-genre" name="genre">
+                            <!-- <option value="classic">Роман</option> -->
+                        </select>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="form-button-add" type="submit">Добавить</button>
+                    </div>
+                </form>
+
+                <form id="form-edit-book" class="form">
+                    <h1>Изменить книгу</h1>
+                    <input type="text" id="form-edit-title" placeholder="Название книги" required readonly>
+                    <input type="text" id="form-edit-author" placeholder="Автор книги" required>
+                    <input type="number" id="form-edit-year" placeholder="Год выпуска книги" required>
+                    <div>
+                        <label for="genre">Выберите жанр:</label>
+                        <select id="form-edit-genre" name="genre">
+                            <!-- <option value="classic">Роман</option> -->
+                        </select>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="form-button-edit" type="submit">Изменить</button>
+                        <button id="form-edit-cancel" class="form-button-cancel" type="button">Отменить</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="library">
+                <div>
+                    <h1>Выбрать категорию</h1>
+                    <div id="genres-container"></div>
+                </div>
+                <div>
+                    <h1>Книги из выбранной категории</h1>
+                    <div id="books-container"></div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="book.js"></script>
+    <script src="library.js"></script>
+    <script src="genres-container.js"></script>
+    <script src="books-container.js"></script>
+    <script src="form-add.js"></script>
+    <script src="form-edit.js"></script>
+</body>
+</html>
