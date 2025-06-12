@@ -30,15 +30,13 @@ window.addEventListener("DOMContentLoaded", () => {
     const formAddSelect = document.getElementById("form-add-genre");
     const formEditSelect = document.getElementById("form-edit-genre");
     libraryInstant.genres.forEach((genre) => {
-        const option1 = document.createElement("option");
-        option1.value = genre;
-        option1.textContent = genre;
-        formAddSelect.appendChild(option1);
-        const option2 = document.createElement("option");
-        option2.value = genre;
-        option2.textContent = genre;
-        formEditSelect.appendChild(option2);
-        formAddSelect.appendChild(option1);
-        formEditSelect.appendChild(option2);
+        const createOption = (value, parent) => {
+            const option = document.createElement("option");
+            option.value = value;
+            option.textContent = value;
+            parent.appendChild(option);
+        };
+        createOption(genre, formAddSelect);
+        createOption(genre, formEditSelect);
     });
 });

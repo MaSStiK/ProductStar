@@ -1,4 +1,4 @@
-// Добавление книги
+// Форма добавление книги
 const formAdd = document.getElementById("form-add-book") as HTMLFormElement;
 formAdd.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -13,17 +13,17 @@ formAdd.addEventListener("submit", (event) => {
     
     // Если такая книга уже есть - выводим ошибку
     if (!success) {
-        alert("Книга с таким названием уже есть!")
-        return
+        alert("Книга с таким названием уже есть!");
+        return;
     }
 
     renderBooks(libraryInstant.books, genre);
     formAdd.reset();
-});
+})
 
 // Отобразить форму добавления книги
 function showFormAdd() {
-    formAdd.reset(); // Сброс формы добавления
+    formAdd.reset(); // Сброс формы
     formAdd.style.display = "flex";
     formEdit.style.display = "none";
 }

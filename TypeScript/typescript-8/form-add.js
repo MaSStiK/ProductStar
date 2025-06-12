@@ -1,5 +1,5 @@
 "use strict";
-// Добавление книги
+// Форма добавление книги
 const formAdd = document.getElementById("form-add-book");
 formAdd.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -19,7 +19,7 @@ formAdd.addEventListener("submit", (event) => {
 });
 // Отобразить форму добавления книги
 function showFormAdd() {
-    formAdd.reset(); // Сброс формы добавления
+    formAdd.reset(); // Сброс формы
     formAdd.style.display = "flex";
     formEdit.style.display = "none";
 }

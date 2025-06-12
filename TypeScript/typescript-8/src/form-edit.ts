@@ -1,3 +1,4 @@
+// Форма изменения книги
 const formEdit = document.getElementById("form-edit-book") as HTMLFormElement;
 formEdit.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -8,16 +9,16 @@ formEdit.addEventListener("submit", (event) => {
     const genre = (document.getElementById("form-edit-genre") as HTMLInputElement).value;
 
     const editedBook = new Book(title, author, year, genre);
-    libraryInstant.editBook(editedBook)
+    libraryInstant.editBook(editedBook);
     renderBooks(libraryInstant.books, genre);
 
     formEdit.reset();
-    showFormAdd()
-});
+    showFormAdd();
+})
 
 // Отобразить форму изменения книги
 function showFormEdit(book: IBook) {
-    formEdit.reset();
+    formEdit.reset(); // Сброс формы
     formEdit.style.display = "flex";
     formAdd.style.display = "none";
 
@@ -30,5 +31,5 @@ function showFormEdit(book: IBook) {
 // Кнопка отмены изменения
 const formEditCancel = document.getElementById("form-edit-cancel") as HTMLButtonElement
 formEditCancel.addEventListener("click", () => {
-    showFormAdd()
+    showFormAdd();
 })

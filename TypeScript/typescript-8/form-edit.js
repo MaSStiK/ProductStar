@@ -1,4 +1,5 @@
 "use strict";
+// Форма изменения книги
 const formEdit = document.getElementById("form-edit-book");
 formEdit.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -14,7 +15,7 @@ formEdit.addEventListener("submit", (event) => {
 });
 // Отобразить форму изменения книги
 function showFormEdit(book) {
-    formEdit.reset();
+    formEdit.reset(); // Сброс формы
     formEdit.style.display = "flex";
     formAdd.style.display = "none";
     document.getElementById("form-edit-title").value = book.title;

@@ -26,18 +26,18 @@ function renderBooks(books: IBook[], genre: string) {
         // Изменение книги
         editButton.addEventListener("click", () => {
             showFormEdit(book)
-        });
+        })
 
         // Удаление книги
         deleteButton.addEventListener("click", () => {
             libraryInstant.deleteBook(book);
             renderBooks(libraryInstant.books, genre);
-        });
+        })
 
         container.appendChild(clone);
-    });
+    })
 }
 
 window.addEventListener("DOMContentLoaded", () => {
     renderBooks(libraryInstant.books, libraryInstant.genres[0])
-});
+})
