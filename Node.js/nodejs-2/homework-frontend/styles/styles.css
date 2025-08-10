@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+article {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    border-radius: 12px;
+}
+
+input {
+    width: 250px;
+    height: 28px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chips-list {
+    display: flex;
+    gap: 4px;
+}
+
+.chips-list button {
+    border-radius: 20px;
+}
