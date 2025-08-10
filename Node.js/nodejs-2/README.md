@@ -7,7 +7,7 @@ npm i
 ```bash
 npm start
 ```
-### homework-frontend
+## homework-frontend
 В папке **homework-frontend** лежит сайт, который взаимодействует с API.
 
 - **index.html** — взаимодействие с двумя API:
