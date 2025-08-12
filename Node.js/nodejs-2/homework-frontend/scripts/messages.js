@@ -34,7 +34,7 @@ function getMessages() {
 }
 
 // Добавить сообщение
-function addMessages(text) {
+function addMessage(text) {
     $.ajax({
         method: "POST",
         url: `http://localhost:3000/api/messages`,
@@ -53,7 +53,7 @@ function addMessages(text) {
 }
 
 // Изменить сообщение
-function editMessages(text, date) {
+function editMessage(text, date) {
     $.ajax({
         method: "PUT",
         url: `http://localhost:3000/api/messages`,
@@ -72,7 +72,7 @@ function editMessages(text, date) {
 }
 
 // Удалить сообщение
-function deleteMessages(date) {
+function deleteMessage(date) {
     $.ajax({
         method: "DELETE",
         url: `http://localhost:3000/api/messages`,
@@ -96,7 +96,7 @@ const messagesInput = $("#message-input")
 // Кнопка Добавления
 $("#message-add").on("click tap", () => {
     $("#message-search-count").text("Загрузка сообщений...")
-    addMessages(messagesInput.val())
+    addMessage(messagesInput.val())
 })
 
 // Кнопка Обновления
@@ -114,13 +114,13 @@ $("#messages-container").on("click tap", ".message-edit", function () {
     if (!newText || newText === text) return
 
     const date = $(this).attr("data-date")
-    editMessages(newText, date)
+    editMessage(newText, date)
 })
 
 // Кнопка удаления сообщения
 $("#messages-container").on("click tap", ".message-delete", function () {
     const date = $(this).attr("data-date")
-    deleteMessages(date)
+    deleteMessage(date)
 })
 
 // Сразу запускаем поиск сообщений
