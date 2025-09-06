@@ -13,7 +13,7 @@ let AppService = class AppService {
         return 'Hey, nice to see you';
     }
     async sayHey() {
-        return 'How are you!';
+        return 'How are you';
     }
     async sayBye() {
         return 'See you soon';
