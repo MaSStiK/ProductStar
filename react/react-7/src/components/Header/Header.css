@@ -1,0 +1,19 @@
+:root {
+    --header-height: 80px;
+}
+
+/* Хедер */
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    position: fixed;
+    top: 0; left: 0;
+
+    background-color: var(--header-background-color);
+}

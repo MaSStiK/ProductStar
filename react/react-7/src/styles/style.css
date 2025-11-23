@@ -1,0 +1,59 @@
+@import "./button.css";
+@import "./input.css";
+
+:root {
+    --main-background-color: #0A0E15;
+    --header-background-color: #171B23;
+    --input-border-color: #2c3444;
+    --text-color: #E9E9E9;
+    --text-color-dark: #1D1D1D;
+}
+
+* {
+    font-family: monospace;
+    color: var(--text-color);
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.form-error {
+    font-size: 16px;
+    color: #FF0000;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.home-section {
+    min-width: 660px;
+}
+
+.item-section img {
+    width: 300px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.item-info {
+    max-width: 400px;
+}

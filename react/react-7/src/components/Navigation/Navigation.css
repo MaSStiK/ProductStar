@@ -1,0 +1,28 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li .button {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+@media (hover: hover) {
+	nav ul li .button:is(:hover, :focus-visible) {
+        background-color: #303849;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+	nav ul li .button:active {
+        background-color: #303849;
+    }
+}
+
+/* Активная кнопка когда текущая ссылка */
+nav ul li .button.active {
+    background-color: #272e3b;
+}
