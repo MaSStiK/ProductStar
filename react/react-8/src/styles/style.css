@@ -1,0 +1,53 @@
+@import "./text.css";
+@import "./button.css";
+@import "./input.css";
+
+:root {
+    --main-background-color: #0A0E15;
+    --header-background-color: #171B23;
+    --input-border-color: #2c3444;
+    --text-color: #E9E9E9;
+    --text-color-dark: #1D1D1D;
+}
+
+* { 
+    color: var(--text-color);
+    font-family: monospace;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-form {
+    width: 450px;
+    align-items: center;
+}
+
+.section-form form {
+    width: 100%;
+    align-items: center;
+}
+
+.section-form form input,
+.section-form form button,
+.section-form form a,
+.section-form form hr {
+    width: 100%;
+}
+
+.warning-message {
+    align-items: center;
+}

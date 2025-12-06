@@ -1,0 +1,28 @@
+/* Основная обертка страницы */
+.base-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background-color);
+}
+
+/* Контент страницы */
+article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+
+    /* Опускаем контент под хедер */
+    margin-top: var(--header-height);
+}
+
+/* Секции на странице */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}

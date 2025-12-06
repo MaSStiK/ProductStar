@@ -1,0 +1,31 @@
+button,
+.button {
+    width: fit-content;
+    padding: 12px 20px;
+
+    font-size: 20px;
+    color: var(--text-color-dark);
+    text-decoration: none;
+    text-align: center;
+
+    border: none;
+    outline: none;
+    background-color: #e6e6e6;
+    
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+	button:is(:hover, :focus-visible),
+    .button:is(:hover, :focus-visible) {
+        background-color: #A4ACBD;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+	button:active,
+    .button:active {
+        background-color: #A4ACBD;
+    }
+}

@@ -1,0 +1,18 @@
+h1 {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.form-error {
+    font-size: 16px;
+    color: #FF0000;
+}
+
+small {
+    font-size: 16px;
+}

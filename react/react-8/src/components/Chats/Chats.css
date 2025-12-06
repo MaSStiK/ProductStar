@@ -1,0 +1,15 @@
+.chat-wrapper {
+    width: 700px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+    padding: 12px;
+}
+
+.chat-send {
+    justify-content: center;
+    align-items: center;
+}
