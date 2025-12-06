@@ -16,10 +16,15 @@
 ## 📄 Страницы приложения
 
 ### 1. **Главная (чат)**
+<img width="1449" height="932" alt="Скриншот сделанный 2025-12-06 в 02 10 19-fullpage" src="https://github.com/user-attachments/assets/b9cc8d74-8865-440e-b9fe-126c12ec1ff1" />
+<img width="1449" height="932" alt="Скриншот сделанный 2025-12-06 в 02 10 57-fullpage" src="https://github.com/user-attachments/assets/5d5526b0-ae1f-479e-b68b-6ea9a735e5d9" />
+<img width="1449" height="932" alt="Скриншот сделанный 2025-12-06 в 02 13 55-fullpage" src="https://github.com/user-attachments/assets/1ed00bb2-3d82-4b6d-9d0c-b06de738b565" />
 
 ### 2. **Страница входа**
+<img width="1449" height="932" alt="Скриншот сделанный 2025-12-06 в 02 10 30-fullpage" src="https://github.com/user-attachments/assets/403d7bb7-74e6-4b01-bf43-06dc6be6c32a" />
 
 ### 3. **Страница регистрации**
+<img width="1449" height="932" alt="Скриншот сделанный 2025-12-06 в 02 10 32-fullpage" src="https://github.com/user-attachments/assets/ee616aa3-1335-4ee8-8585-4c292e9d0aca" />
 
 ---
 
