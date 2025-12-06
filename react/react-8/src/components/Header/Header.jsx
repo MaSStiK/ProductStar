@@ -4,8 +4,9 @@ import "./Header.css";
 export default function Header() {
     return (
         <header>
-            <p>Online Chat</p>
+            <p>Offline Chat</p>
             <Navigation />
         </header>
     )
+
 }
