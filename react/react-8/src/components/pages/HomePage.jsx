@@ -8,7 +8,7 @@ export default function HomePage() {
 
     return (
         <section>
-            <h1>Чат пользователей</h1>
+            <h1>Оффлайн чат</h1>
             
             {isShowChats
                 ? <Chats />
@@ -25,4 +25,5 @@ function WarningMessage() {
             <Link className="button" to="/login">Войти в аккаунт</Link>
         </div>
     )
+
 }
