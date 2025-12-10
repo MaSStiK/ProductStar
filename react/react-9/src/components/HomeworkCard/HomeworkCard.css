@@ -1,0 +1,71 @@
+.homework-card {
+    max-width: 300px;
+
+    border: 1px solid #00000044;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.homework-card.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.homework-card img {
+    width: 300px;
+}
+
+.homework-card__content {
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.homework-card__content h4 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+}
+
+.homework-card__content h5 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #00000088;
+    margin: 0;
+}
+
+.homework-card__content p {
+    font-size: 16px;
+    margin: 16px 0 0 0;
+}
+
+.homework-card__content button {
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #0d6efd;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+
+    font-size: 16px;
+    color: #ffffff;
+    margin: 16px 0 0 0;
+}
+
+.homework-card__content button:hover {
+    background-color: #0b5ed7;
+}
+
+.homework-card.active button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.homework-card.active button:hover {
+    background-color: #d6d6d6;
+}

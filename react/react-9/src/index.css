@@ -1,0 +1,16 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.section-homework {
+    margin-bottom: 24px;
+}
